@@ -100,7 +100,7 @@ class Player {
     this.updateTime();
   }
   forward() {
-    this.video.currentTime += 10;
+    this.video.currentTime += 100;
     this.animateActionsBtn("forward");
     this.updateTime();
   }
@@ -524,7 +524,7 @@ function handlePlayerError(video) {
           $(`#playPause img, #center_btn img`).attr("src", "./icons/pause.svg");
         })
         .catch((error) => {
-          popupTimedMsg("Auto play is disabled", 3000, 400);
+          popupTimedMsg("القناة  جاهزة  للعرض", 3000, 400);
         });
     }
 
@@ -585,3 +585,9 @@ function loadLocalVideo() {
 
   return;
 }
+
+
+
+
+
+
