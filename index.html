@@ -6,16 +6,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="dark">
-  <link rel="icon" type="image/x-icon" href="https://6iw8gzevarihgzre65lduq.on.drv.tw/online-video-player-main.com/play.png">
-  <title>live</title>
+  <link rel="icon" type="image/x-icon" href="./play.png">
+  <title>OVP - online video player</title>
 
 
-  <link rel="stylesheet" href="https://6iw8gzevarihgzre65lduq.on.drv.tw/online-video-player-main.com/website/spinner.css">
-  <link rel="stylesheet" href="https://6iw8gzevarihgzre65lduq.on.drv.tw/online-video-player-main.com/website/style.css">
-  <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="spinner.css">
+  <link rel="stylesheet" href="style.css">
+  <script async src="https://kit.fontawesome.com/0c7cf3d8f9.js" crossorigin="anonymous"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script defer src="https://6iw8gzevarihgzre65lduq.on.drv.tw/online-video-player-main.com/website/script.js"></script>
+  <script defer src="script.js"></script>
 </head>
 
 <body>
@@ -27,13 +27,13 @@
       <img width="45px" src="" alt="">
     </div>
     <button id="center_btn" onclick="player.playPause()">
-      <img width="20" src="https://6iw8gzevarihgzre65lduq.on.drv.tw/online-video-player-main.com/website/icons/play.svg" alt="">
+      <img width="20" src="icons/play.svg" alt="">
     </button>
     <div id="videoLeftSide">
-      <img width="50" src="file:///C:/Users/yaman/Desktop/online-video-player-main/website/icons/back.svg" alt="">
+      <img width="50" src="./icons/backward.svg" alt="">
     </div>
     <div id="videoRightSide">
-      <img width="50" src="https://6iw8gzevarihgzre65lduq.on.drv.tw/online-video-player-main.com/website/icons/forward.svg" alt="">
+      <img width="50" src="./icons/forward.svg" alt="">
     </div>
     <div id="popup">
     </div>
@@ -42,11 +42,7 @@
     <div id="video_header">
       <div id="upper_controls_container">
         <button class="control_btn" id="return" title="Return">
-          <img width="22" style="opacity: .8;" src="https://6iw8gzevarihgzre65lduq.on.drv.tw/online-video-player-main.com/website/icons/back.svg" alt="Return">
-          
-          
-          
-          
+          <img width="22" style="opacity: .8;" src="./icons/back.svg" alt="Return">
         </button>
         <div id="video_title_container">
           <h3 id="video_title"></h3>
@@ -54,19 +50,11 @@
       </div>
       <div>
         <button class="control_btn" id="replay" title="Replay" onclick="player.replay()">
-          <img width="24" style="opacity: .9;" src="https://6iw8gzevarihgzre65lduq.on.drv.tw/online-video-player-main.com/website/icons/replay.svg" alt="Replay">
+          <img width="24" style="opacity: .9;" src="./icons/replay.svg" alt="Replay">
         </button>
         <button class="control_btn" id="aspectRatio" title="Change aspect ratio" onclick="player.changeAspectRatio()">
-          <img width="25" style="opacity: .9;" src="https://6iw8gzevarihgzre65lduq.on.drv.tw/online-video-player-main.com/website/icons/aspectRatio.svg" alt="16:9">
+          <img width="25" style="opacity: .9;" src="./icons/aspectRatio.svg" alt="16:9">
         </button>
-
-
- <button class="control_btn" title="Fullscreen" id="fullscreen" onclick="player.fullScreen()">
-            <i class="fa-solid fa-expand" style="color: #ffffff;"></i>
-          </button>
-
-
-
       </div>
     </div>
     <div id="controls">
@@ -80,131 +68,30 @@
       <div id="control_buttons">
         <div class="controls_grp center_controls">
           <button class="control_btn" id="playPause" title="Play Pause" onclick="player.playPause()">
-            <img width="20" src="https://6iw8gzevarihgzre65lduq.on.drv.tw/online-video-player-main.com/website/icons/play.svg" alt="Play">
+            <img width="20" src="./icons/play.svg" alt="Play">
           </button>
-        
+          <button class="control_btn" id="back" title="Backward" onclick="player.backward()">
+            <img width="20" class="control_icon" src="https://img.icons8.com/ios/50/replay-10.png" alt="replay-10" />
+          </button>
+          <button class="control_btn" id="forward" title="Forward" onclick="player.forward()">
+            <img width="20" class="control_icon" src="https://img.icons8.com/ios/50/forward-10.png" alt="forward-10" />
+          </button>
           <div id="volume_controls_container">
             <button class="control_btn" id="toggleMute" title="Toggle Mute" onclick="player.toggleMute()">
-              <img width="20" src="https://6iw8gzevarihgzre65lduq.on.drv.tw/online-video-player-main.com/website/icons/volume.svg" alt="Vol">
+              <img width="20" src="./icons/volume.svg" alt="Vol">
             </button>
             <input type="range" id="volume" name="volume" title="volume" min="0" max="100" step="0.01" value="100"
               style="padding: 0; max-width: 60px;">
           </div>
         </div>
-
-
-
-
-                            <a class="various fancybox" data-fancybox-type="iframe" data-fancybox="" data-type="video" href="http://yamantv2024.blogspot.com/2024/03/live.html?url=https://roya-live.ercdn.net/roya/roya.m3u8">
-  <div class="css-1eqmq6c">
-<img width="40"  class="chakra-image css-g2d9xq" src="https://backend.roya-tv.com/imagechanger/Size01Q40R11/images/channels/TtFuZdW2broxc2b.png">
-<h3 class="chakra-heading css-1so5bev"></h3></div></a>
-  
-
-
-                            <a class="various fancybox" data-fancybox-type="iframe" data-fancybox="" data-type="video" href="http://yamantv2024.blogspot.com/2024/03/live.html?url=https://playlist.fasttvcdn.com/pl/a2le4pbpa6rpzv147haf4w/drama/playlist.m3u8">
-  <div class="css-1eqmq6c">
-<img width="40"  class="chakra-image css-g2d9xq" src="https://cdn6.aptoide.com/imgs/0/6/b/06bfcb277728c8419b88d06ecfcbfb9f_icon.png?w=128">
-<h3 class="chakra-heading css-1so5bev"></h3></div></a>
-  
-  
-  
-
-
-                            <a class="various fancybox" data-fancybox-type="iframe" data-fancybox="" data-type="video" href="http://yamantv2024.blogspot.com/2024/03/live.html?url=https://playlist.fasttvcdn.com/pl/toa2uuhhygheuly7xtuqrg/watan-3a-watar/playlist.m3u8">
-  <div class="css-1eqmq6c">
-<img width="40"  class="chakra-image css-g2d9xq" src="https://as.shoofnet.online:2096/wp-content/uploads/2020/12/shoofnet.png">
-<h3 class="chakra-heading css-1so5bev"></h3></div></a>
-
-  
-  
-  
-
-  
- 
-
-                            <a class="various fancybox" data-fancybox-type="iframe" data-fancybox="" data-type="video" href="http://yamantv2024.blogspot.com/2024/03/live.html?url=https://playlist.fasttvcdn.com/pl/toa2uuhhygheuly7xtuqrg/roya-comedy/playlist.m3u8">
-  <div class="css-1eqmq6c">
-<img width="40"  class="chakra-image css-g2d9xq" src="https://cdn6.aptoide.com/imgs/0/6/b/06bfcb277728c8419b88d06ecfcbfb9f_icon.png?w=128"
-   <h3 class="chakra-heading css-1so5bev"></h3></div></a>                           
-  
-
-
-
-
-
-
-                            <a class="various fancybox" data-fancybox-type="iframe" data-fancybox="" data-type="video" href="http://yamantv2024.blogspot.com/2024/03/live.html?url=https://roya-live.ercdn.net/royanews/royanews.m3u8?st=qXOhfiGa1MNyTGy-TsGN_Q&e=1711479899">
-  <div class="css-1eqmq6c">
-<img width="40"  class="chakra-image css-g2d9xq" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmGbw8mr1PrGzKx65QWrri7Fc6q-ZN-bDQjc6qE9mn9A&s">
-<h3 class="chakra-heading css-1so5bev"></h3></div></a>
-  
-  
-  
-
-
-                            <a class="various fancybox" data-fancybox-type="iframe" data-fancybox="" data-type="video" href="http://yamantv2024.blogspot.com/2024/03/live.html?url=https://playlist.fasttvcdn.com/pl/toa2uuhhygheuly7xtuqrg/roya-kitchen/playlist.m3u8">
-  <div class="css-1eqmq6c">
-<img width="40"  class="chakra-image css-g2d9xq" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEmtFhFiAhHhppyNtTxion5mWNaD363LF18U___crBlQ&s">
-<h3 class="chakra-heading css-1so5bev"></h3></div></a>
-  
-  
-  
-
-  
- 
-
-                            <a class="various fancybox" data-fancybox-type="iframe" data-fancybox="" data-type="video" href="http://yamantv2024.blogspot.com/2024/03/live.html?url=https://playlist.fasttvcdn.com/pl/ptllxjd03j6g9oxxjdfapg/roya-kids/playlist.m3u8">
-  <div class="css-1eqmq6c">
-<img width="40"  class="chakra-image css-g2d9xq" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUb1FILWhKx9j1ucq53XJqRFuPdUdb8Q-rDlPGh13nNA&s">
-<h3 class="chakra-heading css-1so5bev"></h3></div></a>
-                              
-  
-
-
-
-
-
-  
- 
-
-                            <a class="various fancybox" data-fancybox-type="iframe" data-fancybox="" data-type="video" href="http://yamantv2024.blogspot.com/2024/03/live.html?url=https://playlist.fasttvcdn.com/pl/toa2uuhhygheuly7xtuqrg/roya-palestine/playlist.m3u8">
-  <div class="css-1eqmq6c">
-<img width="40"  class="chakra-image css-g2d9xq" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSapDWfKcgWlj04k5cRkcOlv0pmV8MHee1U0CS6pX7IrQ&s">
-<h3 class="chakra-heading css-1so5bev"></h3></div></a>
-  
-  
-  
-
-  
-  
-
-  
- 
-
-                            <a class="various fancybox" data-fancybox-type="iframe" data-fancybox="" data-type="video" href="http://yamantv2024.blogspot.com/2024/03/live.html?url=https://playlist.fasttvcdn.com/pl/toa2uuhhygheuly7xtuqrg/documentaries/playlist.m3u8">
-  <div class="css-1eqmq6c">
-<img width="40"  class="chakra-image css-g2d9xq" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx4mRy-srUIOa3E5uQbl4ee7xxyhE8tcWAAYAum5o53anhC-UsAAYT4n1_h46R_t9myd0&usqp=CAU">
-<h3 class="chakra-heading css-1so5bev"></h3></div></a>
-                              
-  
-
-
-
-
-
-   
-  
-
-
-
-
-
-
         <div class="controls_grp right_controls">
-          
+          <button class="control_btn" id="videoSpeed" title="Change speed" onclick="player.changeSpeed()">
+            <span id="currentSpeed">1</span>
+            <img width="20" src="./icons/speed.svg" alt="Speed">
           </button>
-         
+          <button class="control_btn" title="Fullscreen" id="fullscreen" onclick="player.fullScreen()">
+            <i class="fa-solid fa-expand" style="color: #ffffff;"></i>
+          </button>
         </div>
       </div>
     </div>
@@ -218,5 +105,4 @@
 
 </body>
 
-<script src="https://www.drv.tw/inc/wd.js?s=6iw8gzevarihgzre65lduq"></script></body>
 </html>
